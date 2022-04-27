@@ -48,7 +48,7 @@ keyword: 云计算, 迁移中心, V2V
     </tr>
 </table>
 
-## 虚拟机支持列表
+## 云平台虚拟机支持列表
 
 <table border="1">
     <tr>
@@ -94,7 +94,7 @@ keyword: 云计算, 迁移中心, V2V
 </table>
 
 
-## 硬盘支持列表
+## 云平台硬盘支持列表
 
 <table border="1">
     <tr>
