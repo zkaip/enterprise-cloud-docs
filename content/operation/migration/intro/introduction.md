@@ -48,6 +48,28 @@ keyword: 云计算, 迁移中心, V2V
     </tr>
 </table>
 
+## 源平台支持列表
+
+<table border="1">
+    <tr>
+        <th width="150">平台类型</th>
+        <th width="150">版本</th>
+    </tr>
+    <tr>
+        <td>VMware vSphere</td>
+        <td>7.0</td>
+    </tr>
+    <tr>
+        <td>VMware vSphere</td>
+        <td>6.7</td>
+    </tr>
+    <tr>
+        <td>VMware vSphere</td>
+        <td>6.5</td>
+    </tr>
+</table>
+
+
 ## 云平台虚拟机支持列表
 
 <table border="1">
