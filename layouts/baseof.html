@@ -55,8 +55,10 @@
           </div>
           <div class="col-sm-2 td-sidebar-section-title" id="mobile-slider-menu-block-nav">
             <div class="current-title">计算</div>
-            <div class="mobile-slider-menu-title">目录 <img src="/images/mobile-right-menu-icon.png"
-                class="mobile-slider-menu-block-nav-icon" /> </div>
+            <div class="mobile-slider-menu-title">目录
+              <img src="/images/mobile-right-menu-icon.png"
+                class="mobile-slider-menu-block-nav-icon" />
+            </div>
           </div>
 
           <!-- <div class="col-sm-2"></div> -->
@@ -68,8 +70,10 @@
             <div class="col-md">
               <div class="new-card-block">
                 <div class="">
-                  <div class="card-title" id="{{ .Params.title }}"><img src="{{ .Params.icon }}" class="card-title-img">{{
-                    .Params.title }}</div>
+                  <div class="card-title" id="{{ .Params.title }}">
+                    <img src="{{ .Params.icon }}" class="card-title-img"/>
+                    {{.Params.title }}
+                  </div>
                   <div class="row new-card">
                     {{if .Params.section1}}
                     {{ with .Params.section1 }}
@@ -89,9 +93,7 @@
                     {{ end }}
                     {{ end }}
                     {{ end }}
-
                   </div>
-
                 </div>
               </div>
             </div>
