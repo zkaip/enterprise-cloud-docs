@@ -334,6 +334,9 @@ $(function () {
         "input",
         debounce(function () {
           const keywords = $(this).val();
+          if (keywords) {
+            $container.addClass("show");
+          }
           searchResultToDOM(search(jsonTemp, keywords), keywords);
         }, 300)
       );
@@ -380,10 +383,6 @@ $(document)
   })
 
   .on("keydown", function (e) {
-    if (!isConsole()) {
-      $container.addClass("show");
-    }
-    if (!$container.hasClass("show")) return;
     switch (e.keyCode) {
       case 27: // ESC
         $container.removeClass("show");

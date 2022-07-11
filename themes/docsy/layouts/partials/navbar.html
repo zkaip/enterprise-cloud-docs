@@ -51,7 +51,6 @@
         </form>
         <a href="javascript:;" class="search-mobile-icon"><img src="/images/icons/search.svg"></a>
       </div> -->
-      </div>
       <div class="ins-search media-content column is-centered is-3 search-mobile">
         <div class="ins-search-mask"></div>
          <div class="ins-search-container">
@@ -68,22 +67,10 @@
         </div>
       </div>
     </div>
-      <script> (function (window) {
-        var INSIGHT_CONFIG = {
-            TRANSLATION: { POSTS: '文章', TAGS: '便签', },
-            ROOT_URL: '',
-            CONTENT_URL: '/index.json', };
-            window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-        })
-        (window);
-      </script>
-      <script src="/js/insightSearch.js"></script>
-
-
   </nav>
 
   {{ if ne .Params.LinkTitle "Document"}}
-  <nav class="navbar navmenu navbar-index " {{if eq .Params.type "product"}} style="display: none; z-index:0;" {{end}}   style="z-index: 0;">
+  <nav class="navbar navmenu navbar-index " {{if eq .Params.type "product"}} {{if eq .Site.Params.IsConsole true}} style="display: none; z-index:0;" {{end}} {{end}}   style="z-index: 0;">
     {{ partial "breadcrumb.html" . }}
   </nav>
   {{ end }}
