@@ -31,8 +31,8 @@ draft: false
 |   hbase.hregion.majorcompaction      |  0~2419200000       |   表示两次自动 Major Compaction 的时间间隔，设为0则禁用自动 Compaction。  |
 |   hbase.hstore.blockingStoreFiles    |   1～1000000  |  表示当一个 Store 中的 StoreFiles 达到该值时，会 block 写入，进行 Compaction。  |
 |   hbase.regionserver.optionalcacheflushinterval      |  0~86400000        |   表示一个 edit 版本在内存中 cache 的最长时间，超过该时间则自动 flush 到磁盘，设为0则禁用自动 flush。  |
-|   hfile.block.cache.size   |   0～0.8 |  表示读缓存 BlockCache 占用的堆内存比例，读多于写可适当增大该值。<br>`hbase.regionserver.global.memstore.size` +` hfile.block.cache.size` <= 0.8</br>  |
-|   hbase.regionserver.global.memstore.size      |  0~0.8       |   表示一台 RegionServer 上所有 MemStores 占用的堆内存比例， 写多于读可适当增大该值。<br>`hbase.regionserver.global.memstore.size` + `hfile.block.cache.size` <= 0.8</br>  |
+|   hfile.block.cache.size   |   0～0.8 |  表示读缓存 BlockCache 占用的堆内存比例，读多于写可适当增大该值。<br/>`hbase.regionserver.global.memstore.size` +` hfile.block.cache.size` <= 0.8  |
+|   hbase.regionserver.global.memstore.size      |  0~0.8       |   表示一台 RegionServer 上所有 MemStores 占用的堆内存比例， 写多于读可适当增大该值。<br/>`hbase.regionserver.global.memstore.size` + `hfile.block.cache.size` <= 0.8  |
 |   hfile.index.block.max.size    |   1～13107200  |  表示 HFile 索引块大小。索引块越小，需要的索引块越多，索引的层级越深；索引块过大，对索引块本身的扫描时间会显著的增加。  |
 |   hbase.hregion.max.filesize      |  1~107374182400        |   表示一Region split 触发阈值。当一个 Region 里的所有 HFile 大小超过该值，region 自动 split。  |
 |   hbase.master.logcleaner.ttl  |   1～86400000 |  表示预写 log（WAL）过期时间，超过这个时间 Master 会将该 WAL 删除。  |

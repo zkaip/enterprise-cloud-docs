@@ -24,7 +24,7 @@ draft: false
 | auto.create.topics.enable                                 | <li> true </li><li> false </li>                                        | 是否允许自动创建 Topic。                                     |
 | default.replication.factor                                | 1~10                                                         | 默认副本因子值。                                             |
 | delete.topic.enable                                       | <li> true </li><li> false </li>                                        | 是否允许使用命令行删除 Topic。                               |
-| offsets.topic.replication.factor                          | 1~100                                                        | 内部 offset topic 的复制因子（设定更高的确保可用性）。<br>如果复制因子大于集群节点数，内部创建主题自动创建将会失败，直到集群大小符合这个复制因子的要求。</br> |
+| offsets.topic.replication.factor                          | 1~100                                                        | 内部 offset topic 的复制因子（设定更高的确保可用性）。<br/>如果复制因子大于集群节点数，内部创建主题自动创建将会失败，直到集群大小符合这个复制因子的要求。 |
 | log.cleanup.policy                                        | <li> delete </li><li> compact </li>                                   | 日志清理策略。`delete` 为直接删除；`compact` 为压缩。        |
 | log.cleaner.enable                                        | <li> true </li><li> false </li>                                        | 用于是否开启日志压缩。                                       |
 | compression.type                                          | -                                                            | 用于主题的压缩策略。                                         |
@@ -50,5 +50,5 @@ draft: false
 | replica.lag.time.max.ms                                   | 6000~99999                                                   | leader 会将 follower 从 isr 中删除的时间间隔。               |
 | group.max.session.timeout.ms                              | 0~9999999                                                    | 已注册消费者最长会话超时时长。                               |
 | group.min.session.timeout.ms                              | 0~60000                                                      | 已注册消费者最短会话超时时长。                               |
-| kafka 实例使用的 Scala 版本                               | -                                                            | Kafka 实例使用的 Scala 版本, 默认为 `2.11`，推荐使用 `2.12`。<br>该参数不支持通过界面进行修改。</br> |
+| kafka 实例使用的 Scala 版本                               | -                                                            | Kafka 实例使用的 Scala 版本, 默认为 `2.11`，推荐使用 `2.12`。<br/>该参数不支持通过界面进行修改。 |
 
