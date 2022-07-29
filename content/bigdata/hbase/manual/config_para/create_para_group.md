@@ -1,7 +1,7 @@
 ---
 title: "创建配置组"
 description: 本小节主要介绍如何创建 HBase 配置组。 
-keyword: HBase 配置组；
+keyword: HBase 配置组,
 collapsible: false
 draft: true
 ---
@@ -9,7 +9,7 @@ draft: true
 
 通过 HBase 配置组来管理 HBase 服务的配置。HBase 服务和 HBase 配置组是解耦的，您可以创建多个独立的配置组，并应用到不同的 HBase 服务。
 
-> **注解：**
+> **说明**
 > 
 > HBase 服务在运行过程中，也可以随时变更配置组。
 > 缺省配置组不可以被删除。
